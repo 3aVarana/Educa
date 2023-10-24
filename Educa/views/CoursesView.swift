@@ -17,7 +17,7 @@ struct CoursesView: View {
                     NavigationLink(destination: CourseDetail(course: course)) { }
                     ZStack {
                         RoundedRectangle(cornerRadius: 8)
-                            .fill(.gray)
+                            .fill(Color(.systemBackground))
                             .shadow(color: .black, radius: 4, x: 4, y: 4)
                         RoundedRectangle(cornerRadius: 8)
                             .strokeBorder(.linearGradient(colors: [.black, .white], startPoint: .topLeading, endPoint: .bottomTrailing))
@@ -31,10 +31,7 @@ struct CoursesView: View {
                             Text("Par. \(course.parallel)")
                                 .font(.system(.body))
                         }
-                        Image(systemName: "house")
-                            .resizable()
-                            .frame(height: 64)
-                            .scaledToFill()
+                        image
                     }
                     .padding()
                 }
@@ -46,6 +43,19 @@ struct CoursesView: View {
             .listStyle(PlainListStyle())
             .navigationBarTitle("Courses")
             .scrollContentBackground(.hidden)
+        }
+    }
+    
+    var image: some View {
+        ZStack {
+            RoundedRectangle(cornerRadius: 4)
+                .fill(.gray)
+            RoundedRectangle(cornerRadius: 4)
+                .stroke()
+            Image(systemName: "house")
+                .resizable()
+                .scaledToFit()
+                .padding()
         }
     }
 }
