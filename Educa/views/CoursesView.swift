@@ -41,7 +41,7 @@ struct CoursesView: View {
                 .listRowBackground(Color.clear)
             }
             .listStyle(PlainListStyle())
-            .navigationBarTitle("Courses")
+            .navigationBarTitle("My Courses")
             .scrollContentBackground(.hidden)
         }
     }
