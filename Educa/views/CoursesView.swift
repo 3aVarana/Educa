@@ -14,7 +14,7 @@ struct CoursesView: View {
         NavigationView {
             List(viewModel.courses) { course in
                 ZStack(alignment: .leading) {
-                    NavigationLink(destination: CourseDetail(course: course)) { }
+                    NavigationLink(destination: CourseDetailView(viewModel: CourseDetailViewModel())) { }
                     ZStack {
                         RoundedRectangle(cornerRadius: 8)
                             .fill(Color(.systemBackground))
