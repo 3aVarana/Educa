@@ -10,12 +10,6 @@ import SwiftUI
 struct CourseDetailView: View {
     @ObservedObject var viewModel = CourseDetailViewModel()
     
-    func getSquareView(_ title: String) -> some View {
-        ZStack {
-            
-        }
-    }
-    
     func getSquareView(_ title: String, label: String) -> some View {
         VStack(alignment: .center, spacing: 8) {
             Text(title)
@@ -44,30 +38,18 @@ struct CourseDetailView: View {
             Text("Dailys")
                 .font(.system(.title3, design: .monospaced))
             ForEach(viewModel.dailyCourses, id: \.self) { dailyCourse in
-                VStack {
-                    Text(dailyCourse.date)
-                        .font(.system(.body))
-                        .padding(.vertical, 16)
+                ZStack(alignment: .leading) {
+                    NavigationLink(destination: DailyClassView(), label: {})
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text(dailyCourse.date)
+                            .font(.system(.body))
+                        Text("caption")
+                            .font(.system(.caption))
+                    }
                 }
+                .padding(.vertical, 8)
             }
             .listRowSeparator(.hidden)
-        }
-        .navigationBarTitle("Course")
-        .navigationBarTitleDisplayMode(.inline)
-    }
-    
-    var body2: some View {
-        ScrollView {
-            getSquareView(viewModel.course.name)
-                .padding(.horizontal, 16)
-            HStack {
-                getSquareView("Code: ", label: viewModel.course.code)
-                getSquareView("Parallel: ", label: "\(viewModel.course.parallel)")
-            }
-            .padding(.horizontal, 16)
-            List(viewModel.dailyCourses) { dailyCourse in
-                Text(dailyCourse.date)
-            }
         }
         .navigationBarTitle("Course")
         .navigationBarTitleDisplayMode(.inline)
