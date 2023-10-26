@@ -43,6 +43,11 @@ struct CoursesView: View {
             .listStyle(PlainListStyle())
             .navigationBarTitle("My Courses")
             .scrollContentBackground(.hidden)
+            .navigationBarItems(trailing: Button(action: {}, label: {
+                NavigationLink(destination: CalendarView()) {
+                    Image(systemName: "calendar")
+                }
+            }))
         }
     }
     
