@@ -110,9 +110,19 @@ struct DailyClassView: View {
             }
         }
         .navigationTitle("Daily")
+        .navigationBarItems(trailing: Button(action: {
+            
+        }, label: {
+            NavigationLink(destination: StudentListView()) {
+                Image(systemName: "list.bullet.clipboard")
+            }
+        }))
     }
 }
 
 #Preview {
-    DailyClassView()
+    NavigationView {
+        DailyClassView()
+            .navigationBarTitleDisplayMode(.inline)
+    }
 }

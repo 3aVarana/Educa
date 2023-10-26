@@ -19,6 +19,7 @@
 		7ED88BF82AE879E300E39F36 /* CourseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED88BF72AE879E300E39F36 /* CourseDetailViewModel.swift */; };
 		7ED88BFA2AE89EC600E39F36 /* DailyClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED88BF92AE89EC600E39F36 /* DailyClassView.swift */; };
 		7ED88BFC2AE89EE200E39F36 /* DailyClassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED88BFB2AE89EE200E39F36 /* DailyClassViewModel.swift */; };
+		7ED88BFE2AE9FFDE00E39F36 /* StudentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED88BFD2AE9FFDE00E39F36 /* StudentListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		7ED88BF72AE879E300E39F36 /* CourseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailViewModel.swift; sourceTree = "<group>"; };
 		7ED88BF92AE89EC600E39F36 /* DailyClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyClassView.swift; sourceTree = "<group>"; };
 		7ED88BFB2AE89EE200E39F36 /* DailyClassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyClassViewModel.swift; sourceTree = "<group>"; };
+		7ED88BFD2AE9FFDE00E39F36 /* StudentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				7E48E1852AD84D6B001C4142 /* CoursesView.swift */,
 				7E48E18B2AD85029001C4142 /* CourseDetailView.swift */,
 				7ED88BF92AE89EC600E39F36 /* DailyClassView.swift */,
+				7ED88BFD2AE9FFDE00E39F36 /* StudentListView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				7E48E18C2AD85029001C4142 /* CourseDetailView.swift in Sources */,
 				7ED88BFA2AE89EC600E39F36 /* DailyClassView.swift in Sources */,
 				7E48E1742AD84BEF001C4142 /* EducaApp.swift in Sources */,
+				7ED88BFE2AE9FFDE00E39F36 /* StudentListView.swift in Sources */,
 				7ED88BF62AE8795500E39F36 /* DailyCourse.swift in Sources */,
 				7ED88BF82AE879E300E39F36 /* CourseDetailViewModel.swift in Sources */,
 				7E48E1862AD84D6B001C4142 /* CoursesView.swift in Sources */,
