@@ -21,6 +21,8 @@
 		7ED88BFC2AE89EE200E39F36 /* DailyClassViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED88BFB2AE89EE200E39F36 /* DailyClassViewModel.swift */; };
 		7ED88BFE2AE9FFDE00E39F36 /* StudentListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED88BFD2AE9FFDE00E39F36 /* StudentListView.swift */; };
 		7ED88C002AEA025C00E39F36 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED88BFF2AEA025C00E39F36 /* CalendarView.swift */; };
+		7ED88C022AEA03AF00E39F36 /* StudentListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED88C012AEA03AF00E39F36 /* StudentListViewModel.swift */; };
+		7ED88C042AEA03CD00E39F36 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED88C032AEA03CD00E39F36 /* CalendarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		7ED88BFB2AE89EE200E39F36 /* DailyClassViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyClassViewModel.swift; sourceTree = "<group>"; };
 		7ED88BFD2AE9FFDE00E39F36 /* StudentListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListView.swift; sourceTree = "<group>"; };
 		7ED88BFF2AEA025C00E39F36 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		7ED88C012AEA03AF00E39F36 /* StudentListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentListViewModel.swift; sourceTree = "<group>"; };
+		7ED88C032AEA03CD00E39F36 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				7E48E1872AD84D8C001C4142 /* CoursesViewModel.swift */,
 				7ED88BF72AE879E300E39F36 /* CourseDetailViewModel.swift */,
 				7ED88BFB2AE89EE200E39F36 /* DailyClassViewModel.swift */,
+				7ED88C012AEA03AF00E39F36 /* StudentListViewModel.swift */,
+				7ED88C032AEA03CD00E39F36 /* CalendarViewModel.swift */,
 			);
 			path = "view models";
 			sourceTree = "<group>";
@@ -194,8 +200,10 @@
 				7E48E1762AD84BEF001C4142 /* ContentView.swift in Sources */,
 				7E48E1882AD84D8C001C4142 /* CoursesViewModel.swift in Sources */,
 				7ED88C002AEA025C00E39F36 /* CalendarView.swift in Sources */,
+				7ED88C022AEA03AF00E39F36 /* StudentListViewModel.swift in Sources */,
 				7E48E18A2AD84D99001C4142 /* Course.swift in Sources */,
 				7E48E18C2AD85029001C4142 /* CourseDetailView.swift in Sources */,
+				7ED88C042AEA03CD00E39F36 /* CalendarViewModel.swift in Sources */,
 				7ED88BFA2AE89EC600E39F36 /* DailyClassView.swift in Sources */,
 				7E48E1742AD84BEF001C4142 /* EducaApp.swift in Sources */,
 				7ED88BFE2AE9FFDE00E39F36 /* StudentListView.swift in Sources */,
