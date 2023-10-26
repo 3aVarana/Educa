@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CalendarView: View {
+    @StateObject var viewModel = CalendarViewModel()
+    
     var body: some View {
         VStack(alignment: .center, spacing: 32) {
             Image(systemName: "calendar")

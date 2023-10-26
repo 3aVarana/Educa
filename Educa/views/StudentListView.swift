@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct StudentListView: View {
+    @StateObject var viewModel = StudentListViewModel()
     @State private var isChecked: Bool = false
     
     var body: some View {
