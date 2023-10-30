@@ -21,11 +21,7 @@ struct CoursesView: View {
             .listStyle(PlainListStyle())
             .navigationBarTitle("My Courses")
             .scrollContentBackground(.hidden)
-            .navigationBarItems(trailing: Button(action: {}, label: {
-                NavigationLink(destination: CalendarView()) {
-                    Image(systemName: "calendar")
-                }
-            }))
+            .navigationBarItems(trailing: navigationBar)
         }
     }
     
@@ -51,6 +47,21 @@ struct CoursesView: View {
                 courseImage
             }
             .padding()
+        }
+    }
+    
+    var navigationBar: some View {
+        HStack {
+            Button(action: {}, label: {
+                NavigationLink(destination: CreateCourseView()) {
+                    Image(systemName: "plus")
+                }
+            })
+            Button(action: {}, label: {
+                NavigationLink(destination: CalendarView()) {
+                    Image(systemName: "calendar")
+                }
+            })
         }
     }
     

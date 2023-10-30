@@ -21,6 +21,7 @@
 		7E842B662AF040C5007BD3DF /* CourseItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E842B652AF040C5007BD3DF /* CourseItemsMapper.swift */; };
 		7E842B692AF04120007BD3DF /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E842B682AF04120007BD3DF /* HTTPURLResponse+StatusCode.swift */; };
 		7E842B6B2AF04295007BD3DF /* URLSessionRemoteClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E842B6A2AF04295007BD3DF /* URLSessionRemoteClient.swift */; };
+		7E842B6D2AF04767007BD3DF /* CreateCourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E842B6C2AF04767007BD3DF /* CreateCourseView.swift */; };
 		7ED88BF62AE8795500E39F36 /* DailyCourse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED88BF52AE8795500E39F36 /* DailyCourse.swift */; };
 		7ED88BF82AE879E300E39F36 /* CourseDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED88BF72AE879E300E39F36 /* CourseDetailViewModel.swift */; };
 		7ED88BFA2AE89EC600E39F36 /* DailyClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ED88BF92AE89EC600E39F36 /* DailyClassView.swift */; };
@@ -47,6 +48,7 @@
 		7E842B652AF040C5007BD3DF /* CourseItemsMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItemsMapper.swift; sourceTree = "<group>"; };
 		7E842B682AF04120007BD3DF /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
 		7E842B6A2AF04295007BD3DF /* URLSessionRemoteClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionRemoteClient.swift; sourceTree = "<group>"; };
+		7E842B6C2AF04767007BD3DF /* CreateCourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCourseView.swift; sourceTree = "<group>"; };
 		7ED88BF52AE8795500E39F36 /* DailyCourse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCourse.swift; sourceTree = "<group>"; };
 		7ED88BF72AE879E300E39F36 /* CourseDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetailViewModel.swift; sourceTree = "<group>"; };
 		7ED88BF92AE89EC600E39F36 /* DailyClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyClassView.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				7ED88BF92AE89EC600E39F36 /* DailyClassView.swift */,
 				7ED88BFD2AE9FFDE00E39F36 /* StudentListView.swift */,
 				7ED88BFF2AEA025C00E39F36 /* CalendarView.swift */,
+				7E842B6C2AF04767007BD3DF /* CreateCourseView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				7ED88C042AEA03CD00E39F36 /* CalendarViewModel.swift in Sources */,
 				7ED88BFA2AE89EC600E39F36 /* DailyClassView.swift in Sources */,
 				7E48E1742AD84BEF001C4142 /* EducaApp.swift in Sources */,
+				7E842B6D2AF04767007BD3DF /* CreateCourseView.swift in Sources */,
 				7ED88BFE2AE9FFDE00E39F36 /* StudentListView.swift in Sources */,
 				7E842B692AF04120007BD3DF /* HTTPURLResponse+StatusCode.swift in Sources */,
 				7ED88BF62AE8795500E39F36 /* DailyCourse.swift in Sources */,
