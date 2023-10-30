@@ -13,3 +13,5 @@ struct Course: Identifiable, Hashable {
     let code: String
     let parallel: Int
 }
+
+extension Course: Decodable {}

@@ -9,6 +9,7 @@ import Foundation
 
 class CoursesViewModel: ObservableObject {
     @Published var courses = [Course]()
+    private var loader: CourseLoader = RemoteDataLoader(url: URL(string: "https://test.com")!, client: URLSessionRemoteClient(session: URLSession.shared))
     
     init() {
         loadCourses()
