@@ -13,32 +13,10 @@ struct CoursesView: View {
     var body: some View {
         NavigationView {
             List(viewModel.courses) { course in
-                ZStack(alignment: .leading) {
-                    NavigationLink(destination: CourseDetailView(viewModel: CourseDetailViewModel())) { }
-                    ZStack {
-                        RoundedRectangle(cornerRadius: 8)
-                            .fill(Color(.systemBackground))
-                            .shadow(color: .black, radius: 4, x: 4, y: 4)
-                        RoundedRectangle(cornerRadius: 8)
-                            .strokeBorder(.linearGradient(colors: [.black, .white], startPoint: .topLeading, endPoint: .bottomTrailing))
-                    }
-                    HStack {
-                        VStack(alignment: .leading, spacing: 16) {
-                            Text(course.name)
-                                .font(.system(.title2, design: .monospaced))
-                            Text(course.code)
-                                .font(.system(.title3))
-                            Text("Par. \(course.parallel)")
-                                .font(.system(.body))
-                        }
-                        image
-                    }
-                    .padding()
-                }
-                .listRowSeparator(.hidden)
-                .backgroundStyle(.clear)
-                .padding(.bottom, 16)
-                .listRowBackground(Color.clear)
+                getCourseCellView(for: course)
+                    .listRowSeparator(.hidden)
+                    .padding(.bottom, 16)
+                    .listRowBackground(Color.clear)
             }
             .listStyle(PlainListStyle())
             .navigationBarTitle("My Courses")
@@ -51,7 +29,32 @@ struct CoursesView: View {
         }
     }
     
-    var image: some View {
+    func getCourseCellView(for course: Course) -> some View {
+        ZStack(alignment: .leading) {
+            NavigationLink(destination: CourseDetailView(viewModel: CourseDetailViewModel())) { }
+            ZStack {
+                RoundedRectangle(cornerRadius: 8)
+                    .fill(Color(.systemBackground))
+                    .shadow(color: .black, radius: 4, x: 4, y: 4)
+                RoundedRectangle(cornerRadius: 8)
+                    .strokeBorder(.linearGradient(colors: [.black, .white], startPoint: .topLeading, endPoint: .bottomTrailing))
+            }
+            HStack {
+                VStack(alignment: .leading, spacing: 16) {
+                    Text(course.name)
+                        .font(.system(.title2, design: .monospaced))
+                    Text(course.code)
+                        .font(.system(.title3))
+                    Text("Par. \(course.parallel)")
+                        .font(.system(.body))
+                }
+                courseImage
+            }
+            .padding()
+        }
+    }
+    
+    var courseImage: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 4)
                 .fill(.gray)
